@@ -87,7 +87,7 @@ button[aria-label] {
 st.markdown(custom_css, unsafe_allow_html=True)
 
 
-st.title("📆 [KSFC 중복청약] IPO 캘린더 생성 ✨")
+st.title("📆 [KSFC 중복청약] IPO 캘린더 생성")
 
 
 st.markdown("---")

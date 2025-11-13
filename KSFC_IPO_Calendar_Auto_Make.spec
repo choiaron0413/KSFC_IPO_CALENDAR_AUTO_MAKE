@@ -5,7 +5,7 @@ a = Analysis(
     ['KSFC_중복청약_IPO_캘린더.py'],
     pathex=[],
     binaries=[],
-    datas=[('welcome_app.py', '.')],
+    datas=[('welcome_app.py', '.'), ('ipo_search.py', '.'), ('calendarUtils.py', '.')],
     hiddenimports=['streamlit.runtime.scriptrunner.magic_funcs', 'streamlit.web.cli', 'streamlit.web.bootstrap'],
     hookspath=['./hooks'],
     hooksconfig={},
