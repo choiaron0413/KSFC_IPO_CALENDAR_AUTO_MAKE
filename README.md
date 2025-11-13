@@ -23,3 +23,6 @@
 주기적 수행: 서버에 프로그램을 배포하여 정기적/주기적으로 IPO 일정을 스크롤링하고 캘린더를 생성합니다.
 
 SMTP 메일 발송: 생성된 Excel 파일을 담당자 목록에 SMTP(Simple Mail Transfer Protocol)를 연결하여 자동으로 이메일로 발송하는 시스템을 구축할 예정입니다.
+
+**3. 👀 하나의 실행파일로 빌드 방법**
+pyinstaller --onefile --additional-hooks-dir=./hooks --name "KSFC_IPO_Calendar_Auto_Make" --add-data "welcome_app.py;." --add-data "ipo_search.py;." --add-data "calendarUtils.py;." --hidden-import "streamlit.runtime.scriptrunner.magic_funcs" --hidden-import "streamlit.web.cli" --hidden-import "streamlit.web.bootstrap" KSFC_중복청약_IPO_캘린더.py --clean 
